@@ -9,7 +9,7 @@ O site apresenta um layout moderno e responsivo, com seções sobre o universo g
 ## 🚀 **Acesso ao Projeto**
 
 🔗 **Site no GitHub Pages:**  
-👉 [[https://filrodrigues.github.io/Trabalho-de-CSS-Grid](https://filrodrigues.github.io/Trabalho-de-CSS-Grid-/)/]
+👉 [[https://filrodrigues.github.io/index.html](https://filrodrigues.github.io/index.html)/]
 
 🔗 **Repositório no GitHub:**  
 👉 [https://github.com/filrodrigues/Trabalho-de-CSS-Grid-](https://github.com/filrodrigues/Trabalho-de-CSS-Grid-)
