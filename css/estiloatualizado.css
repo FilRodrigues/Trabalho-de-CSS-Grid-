@@ -1,0 +1,241 @@
+/* RESET E FONTES */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #ddd;
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #000428, #004e92);
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.6rem;
+    color: #a64aff;
+}
+
+/* MENU */
+nav {
+    background-color: #111;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a64aff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* SEÇÕES */
+section {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#home {
+    text-align: center;
+}
+
+.img-principal {
+    width: 90%;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* GALERIA INTRO */
+.galeria-intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.galeria-intro figure {
+    width: 300px;
+}
+
+.galeria-intro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* NOTÍCIAS */
+.galeria-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #00aaff;
+    margin-top: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* CONTATO */
+.grid-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.grid-contato form {
+    display: grid;
+    gap: 1rem;
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.grid-contato fieldset {
+    border: 1px solid #a64aff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.grid-contato label {
+    color: #a64aff;
+    font-weight: bold;
+}
+
+.grid-contato input,
+.grid-contato select,
+.grid-contato textarea,
+.grid-contato button {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+}
+
+.grid-contato button {
+    background: #a64aff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grid-contato button:hover {
+    background: #00aaff;
+}
+
+.grid-contato picture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* GALERIA GRID */
+.painel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.f1 { background-image: url('../img/painel1.webp'); }
+.f2 { background-image: url('../img/painel2.webp'); }
+.f3 { background-image: url('../img/painel3.webp'); }
+.f4 { background-image: url('../img/painel4.webp'); }
+.f5 { background-image: url('../img/painel5.webp'); }
+
+/* BOTÃO VOLTAR */
+.voltar-topo {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #a64aff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar-topo:hover {
+    color: #00aaff;
+}
+
+/* RODAPÉ */
+footer {
+    background: #000;
+    color: #999;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem;
+    }
+
+    .galeria-noticias,
+    .galeria-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-contato {
+        grid-template-columns: 1fr;
+    }
+}
